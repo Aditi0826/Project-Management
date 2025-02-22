@@ -1,0 +1,24 @@
+/* src/components/AddProject.css */
+
+.add-project-btn {
+    background: linear-gradient(135deg, #8a6f00, #d4a017); /* Luxurious Gold */
+    color: white;
+    padding: 16px 28px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .add-project-btn:hover {
+    background: linear-gradient(135deg, #b38b00, #8a6f00); /* Darker Gold */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  }
+  
