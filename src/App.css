@@ -75,3 +75,54 @@ body {
 .delete-btn:hover {
   background: #c0392b;
 }
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: #2c3e50; 
+  color: white; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  text-align: center;
+}
+
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.modal-content {
+  background-color: #2C3E50; /* Match header color */
+  padding: 10px; /* Reduced padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 50%; /* Reduce side margins */
+  margin: 10vh auto; /* Keep top and bottom margins */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 95%; /* Reduce width slightly to minimize margins */
+  margin-bottom: 8px; /* Reduce space between fields */
+  padding: 6px; /* Reduce padding */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

@@ -11,11 +11,14 @@ const App = () => {
 
   const handleAddProject = () => {
     const name = prompt("Enter Project Name:");
+    if (!name) return; // Stop here if name is not provided
+    
     const description = prompt("Enter Project Description:");
-    if (name && description) {
-      setProjects([...projects, { id: Date.now().toString(), name, description }]);
-    }
+    if (!description) return; // Stop here if description is not provided
+  
+    setProjects([...projects, { id: Date.now().toString(), name, description }]);
   };
+  
 
   const handleDeleteProject = (id) => {
     setProjects(projects.filter((project) => project.id !== id));
