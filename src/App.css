@@ -23,13 +23,14 @@ body {
   background: linear-gradient(135deg, #27ae60, #2ecc71);
   color: white;
   border: none;
-  padding: 12px 20px;
+  padding: 0 15px;
+  height: 32px;
   font-size: 16px;
   cursor: pointer;
   border-radius: 8px;
   transition: 0.3s;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  margin-top: 20px;
+  box-sizing: border-box;
 }
 
 .add-project-btn:hover {
@@ -69,7 +70,6 @@ body {
   cursor: pointer;
   border-radius: 6px;
   transition: 0.3s;
-  margin-top: 10px;
 }
 
 .delete-btn:hover {
@@ -89,15 +89,14 @@ body {
 }
 
 .modal {
-  background: #2c3e50; 
-  color: white; 
+  background: #2c3e50;
+  color: #0a0a0a; /* Changed text color from white to yellow for better visibility */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
   width: 300px;
   text-align: center;
 }
-
 
 .modal-buttons {
   display: flex;
@@ -106,12 +105,12 @@ body {
 }
 
 .modal-content {
-  background-color: #2C3E50; /* Match header color */
-  padding: 10px; /* Reduced padding */
+  background-color: #2C3E50;
+  padding: 10px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 50%; /* Reduce side margins */
-  margin: 10vh auto; /* Keep top and bottom margins */
+  width: 50%;
+  margin: 10vh auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -120,9 +119,145 @@ body {
 
 .modal-content input,
 .modal-content textarea {
-  width: 95%; /* Reduce width slightly to minimize margins */
-  margin-bottom: 8px; /* Reduce space between fields */
-  padding: 6px; /* Reduce padding */
+  width: 95%;
+  margin-bottom: 8px;
+  padding: 6px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+  height: 32px;
+  line-height: 32px;
+  padding: 3px 12px;
+  border: 2px solid #4CAF50;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-top: 0; /* Align properly */
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.project-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.control-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px;
+}
+
+.comments-input {
+  width: 95%; /* Reduce width slightly to create margin */
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px; 
+  margin-right: 10px; /* Added margin on the right */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.due-date-input {
+  height: 32px;
+  padding: 5px;
+  border: 2px solid #4CAF50;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+  margin-left: 10px; 
+  box-sizing: border-box;
+}
+
+
+.comments-input {
+  width: 90%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.archive-btn {
+  background: #0d0d0d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.archive-btn:hover {
+  background: #0d0d0d;
+}
+
+.unarchive-btn {
+  background: #0d0d0d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+  margin: 10px;
+}
+
+.unarchive-btn:hover {
+  background: #0d0d0d;
+}
+
+.project-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.file-attachments {
+  margin-top: 10px;
+  text-align: left;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.file-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e3e3e3;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.delete-file-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 2px 6px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.delete-file-btn:hover {
+  background: #c0392b;
+}
+
